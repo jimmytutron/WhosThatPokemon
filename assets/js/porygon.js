@@ -118,7 +118,7 @@ function newPokemon(){
 
 	$("#correctPokemon").empty();
 
- 		$("#pokemon").html("<img class='pkmnImg' src=" + whoDat[currentPokemon].pokemon + ">");
+ 		$("#pokemon").html("<img class='pkmnImg img-fluid' src=" + whoDat[currentPokemon].pokemon + ">");
  		for (var i=0; i < 4; i++){
  			var choices = $('<div>');
  			choices.html("<h2 class='hvr-sweep-to-top'>" + whoDat[currentPokemon].answers[i] + "</h2>");
@@ -135,7 +135,7 @@ function newPokemon(){
  	});
 };
 function countdown(){
- 		tickTock = 100;
+ 		tickTock = 1000;
  		$("#timer").text(tickTock);
  		answered = true;
  		time = setInterval(displayCountdown, 1000);
@@ -160,22 +160,22 @@ function displayPokemon(){
  		if(userChoice === correctIndex && answered === true){
  			correctAnswers++;
  			$("#correctPokemon").html("It's " + correctAnswerText);
- 			$("#pokemon").html("<img class='pkmnImg' src=" + whoDat[currentPokemon].pokemonAnswer + ">");
+ 			$("#pokemon").html("<img class='pkmnImg img-fluid' src=" + whoDat[currentPokemon].pokemonAnswer + ">");
  		} else if (userChoice != correctIndex && answered === true){
  			incorrectAnswers++;
  			$("#correctPokemon").html("It's " + correctAnswerText);
- 			$("#pokemon").html("<img class='pkmnImg' src=" + whoDat[currentPokemon].pokemonAnswer + ">");
+ 			$("#pokemon").html("<img class='pkmnImg img-fluid' src=" + whoDat[currentPokemon].pokemonAnswer + ">");
  		} else {
  			unanswered++;
  			$("#correctPokemon").html("It's " + correctAnswerText);
- 			$("#pokemon").html("<img class='pkmnImg' src=" + whoDat[currentPokemon].pokemonAnswer + ">");
+ 			$("#pokemon").html("<img class='pkmnImg img-fluid' src=" + whoDat[currentPokemon].pokemonAnswer + ">");
  			answered = true;
  		}
  		if (currentPokemon === whoDat.length -1){
- 			setTimeout(results, 2000)
+ 			setTimeout(results, 10000)
  		}else{
  			currentPokemon++;
- 			setTimeout(newPokemon, 2000);
+ 			setTimeout(newPokemon, 10000);
  		}
 };
 function results(){
