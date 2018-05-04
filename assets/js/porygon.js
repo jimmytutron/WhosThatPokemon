@@ -159,7 +159,7 @@ function newPokemon(){
  	});
 };
 function countdown(){
- 		tickTock = 1000;
+ 		tickTock = 10;
  		$("#timer").text(tickTock);
  		answered = true;
  		time = setInterval(displayCountdown, 1000);
@@ -177,6 +177,7 @@ function displayCountdown(){
 function displayPokemon(){
  		$("#pokemon").empty();
  		$(".thisPokemon").empty();
+ 		$("#timer").empty();
 
  		var correctIndex = whoDat[currentPokemon].correct
  		var correctAnswerText = whoDat[currentPokemon].answers[correctIndex];
@@ -196,14 +197,15 @@ function displayPokemon(){
  		} else {
  			unanswered++;
  			$("#correctPokemon").html("<h2 class='animated bounceInRight'> You ran out of time! It's " + correctAnswerText+ "!</h2>");
+ 			$("#correctPokemon").append(wrongGif);
  			$("#pokemon").html("<img class='pkmnImg img-fluid animated bounceInLeft' src=" + whoDat[currentPokemon].pokemonAnswer + ">");
  			answered = true;
  		}
  		if (currentPokemon === whoDat.length -1){
- 			setTimeout(results, 7000)
+ 			setTimeout(results, 4000)
  		}else{
  			currentPokemon++;
- 			setTimeout(newPokemon, 7000);
+ 			setTimeout(newPokemon, 4000);
  		}
 };
 function results(){
