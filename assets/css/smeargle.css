@@ -2,7 +2,7 @@ body{
 	text-align: center;
 	background-image: url("../imgs/pattern.png");
 	font-family: 'Itim', cursive;
-	overflow: hidden;
+	overflow: auto;
 }
 
 .logo{
