@@ -121,7 +121,7 @@ function newPokemon(){
  		$("#pokemon").html("<img class='pkmnImg img-fluid' src=" + whoDat[currentPokemon].pokemon + ">");
  		for (var i=0; i < 4; i++){
  			var choices = $('<div>');
- 			choices.html("<h2 class='hvr-sweep-to-top'>" + whoDat[currentPokemon].answers[i] + "</h2>");
+ 			choices.html("<h2 class='btn btn-2 btn-2h'>" + whoDat[currentPokemon].answers[i] + "</h2>");
  			choices.attr("data-index", i);
  			choices.addClass("thisPokemon");
  			$("#answers").append(choices);
@@ -172,10 +172,10 @@ function displayPokemon(){
  			answered = true;
  		}
  		if (currentPokemon === whoDat.length -1){
- 			setTimeout(results, 10000)
+ 			setTimeout(results, 1000)
  		}else{
  			currentPokemon++;
- 			setTimeout(newPokemon, 10000);
+ 			setTimeout(newPokemon, 1000);
  		}
 };
 function results(){
