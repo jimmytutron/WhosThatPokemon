@@ -199,10 +199,10 @@ function displayPokemon(){
  			answered = true;
  		}
  		if (currentPokemon === whoDat.length -1){
- 			setTimeout(results, 4000)
+ 			setTimeout(results, 5000)
  		}else{
  			currentPokemon++;
- 			setTimeout(newPokemon, 4000);
+ 			setTimeout(newPokemon, 5000);
  		}
 };
 function results(){
@@ -210,9 +210,26 @@ function results(){
 	$("#correctPokemon").empty();
 	$("#pokemon").empty();
 
-	$("#right").html("<h2> Correct Answers: " + correctAnswers + "</h2>");
-	$("#wrong").html("<h2> Incorrect Answers: " + incorrectAnswers + "</h2>");
+	$("#right").html("<h2> Correct: " + correctAnswers + "</h2>");
+	$("#wrong").html("<h2> Incorrect: " + incorrectAnswers + "</h2>");
 	$("#unanswered").html("<h2> Unanswered: " + unanswered + "</h2>");
+
+	if (correctAnswers === 12) {
+		$("#rank").html("<h2>Wow! You're a Pokemon Master!</h2>");
+		$("#rank").append("<img class='pkmnImg img-fluid animated fadeInUp' src='https://media.giphy.com/media/MhHXeM4SpKrpC/giphy.gif'>");
+	} else if (correctAnswers >= 9) {
+		$("#rank").html("<h2>You're ready to take on the Pokemon League, trainer!</h2>");
+		$("#rank").append("<img class='pkmnImg img-fluid animated fadeInUp' src='https://media.giphy.com/media/mcJohbfGPATW8/giphy.gif'>");	
+	} else if (correctAnswers >= 6) {
+		$("#rank").html("<h2>Not too shabby, with some training you could get far!</h2>");
+		$("#rank").append("<img class='pkmnImg img-fluid animated fadeInUp' src='https://media3.giphy.com/media/amrNGnZUeWhZC/giphy.gif'>");	
+	} else if (correctAnswers >= 3) {
+		$("#rank").html("<h2>Looks like you could use more training!</h2>");
+		$("#rank").append("<img class='pkmnImg img-fluid animated fadeInUp' src='https://media0.giphy.com/media/RPTxTwpx4ChiM/giphy.gif'>");	
+	} else if (correctAnswers >= 0) {
+		$("#rank").html("<h2>Oof! Go back to Pokemon School</h2>");
+		$("#rank").append("<img class='pkmnImg img-fluid animated fadeInUp' src='https://media0.giphy.com/media/rAm0u2k17rM3e/giphy.gif'>");	
+	}
 	restart.show();
 	restart.html("<h2 class='btn btn-2 btn-2h'>Play Again?</h2>");
 };
