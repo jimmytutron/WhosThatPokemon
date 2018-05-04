@@ -37,7 +37,7 @@ A modern web browser is recommeded for playing this game. Thanks to Bootstrap, t
 ### Good Luck!! 
 
 ## Play the Game :white_circle: 
-Launch the game here! [Avatar - Master the Elements](https://jimmytutron.github.io/WhosThatPokemon/) 
+Launch the game here! [Who's That Pokemon?](https://jimmytutron.github.io/WhosThatPokemon/) 
 
 ## Built With :red_circle:
 
