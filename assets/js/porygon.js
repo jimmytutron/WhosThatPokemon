@@ -128,6 +128,7 @@ function intialize(){
   	$("#right").empty();
 	$("#wrong").empty();
 	$("#unanswered").empty();
+	$("#rank").empty();
 	currentPokemon = 0;
 	correctAnswers = 0;
 	incorrectAnswers = 0;
