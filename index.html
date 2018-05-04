@@ -8,51 +8,44 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/smeargle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
 
     <title>Who's That Pokemon?</title>
   </head>
   <body>
+
     <div class="container">
       <div class="h-100 row align-items-center">
         <div class="col logo">
-          <img class='img-fluid' src="assets/imgs/logo.png">
+          <img class='img-fluid animated rotateIn' src="assets/imgs/logo.png">
         </div>
       </div>
-          <div class="h-100 row align-items-center">
-        <div class="col">
-          <div id ="start" class="btn btn-2 btn-2h">Start</div>
-        </div>
-      </div>
-
-
       <div class="h-100 row align-items-center">
         <div class="col">
-          <h3><span id="timer"></span></h3>
+          <div id ="start">
+            <iframe class="video" src="https://www.youtube.com/embed/qyXTgqJtoGM?" frameborder="0" allowfullscreen></iframe><br>
+            <span class="btn btn-2 btn-2h animated flipInX">Start</span>
+          </div>
+        </div>
+      </div>
+      <div class="h-100 row align-items-center">
+        <div class="col">
+          <h3 id="timer"></h3>
           <div id ="right"></div>
           <div id ="wrong"></div>
           <div id ="unanswered"></div>
           <div id="restart"></div>
         </div>
       </div>
-
-
-      <div class="h-100 row align-items-center">
+      <div class="h-100 row align-items-center justify-content-md-center no-gutters">
         <div class="col-12 col-md-6" id="pokemon">
         </div>
-        <div class="col-12 col-md-6" id="answers">
+        <div class="col-12 col-md-3" id="answers">
           <div id = "correctPokemon"></div>
         </div>
       </div>
-
-          </div>
-        </div>
-
-      </div>
-
-
-
     </div>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
