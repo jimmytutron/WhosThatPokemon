@@ -2,7 +2,6 @@
 
 ![logo](assets/imgs/logo.png)
 
-:red_circle: :white_circle: :red_circle: :white_circle: :red_circle: :white_circle:
 
 So you wanna be a Pokemon master? Test your Pokeknowledge in this 12 Pokemon guessing game!
 
@@ -19,7 +18,7 @@ So you wanna be a Pokemon master? Test your Pokeknowledge in this 12 Pokemon gue
 
 A modern web browser is recommeded for playing this game. Thanks to Bootstrap, this game is fully responsive and playable on mobile devices.
 
-### Rules
+### Rules 
 
 * When the game starts, a sillhouette of a Pokemon will slide in on the left, with possible answer buttons sliding in from the right. 
 
@@ -28,14 +27,14 @@ A modern web browser is recommeded for playing this game. Thanks to Bootstrap, t
 * Your correct and incorrect guesses will be displayed at the end of the game.
 
 #### Score 
-> **12** - POKEMON MASTER!!
-> **11-9** - GYM LEADER
-> **8-6** - ACE TRAINER
-> **5-3** - YOUNGSTER
-> **2-1** - JIGGLYPUFF
+* **12** - POKEMON MASTER!!
+* **11-9** - GYM LEADER
+* **8-6** - ACE TRAINER
+* **5-3** - YOUNGSTER
+* **2-1** - JIGGLYPUFF
 
 
-### Good Luck!!
+### Good Luck!! 
 
 ## Play the Game :white_circle: 
 Launch the game here! [Avatar - Master the Elements](https://jimmytutron.github.io/WhosThatPokemon/) 
@@ -46,7 +45,7 @@ Launch the game here! [Avatar - Master the Elements](https://jimmytutron.github.
 * [jQuery](https://jquery.com/) - a javascript library
 * [Bootstrap](https://getbootstrap.com/) - The web framework used
 
-## Authors :earth_americas:
+## Authors :white_circle: 
 
 * **Jimmy Tu** - [jimmytutron](https://github.com/jimmytutron)
 
