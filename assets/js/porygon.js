@@ -113,9 +113,6 @@ var whoDat = [{
 	];
 
 var restart = $("#restart");
-var rightAnswerText = $("#right");
-var wrongAnswerText = $("#wrong");
-var unansweredText = $("#unanswered");
 
  $("#start").on("click", function(){
  	$(this).hide();
@@ -213,10 +210,9 @@ function results(){
 	$("#correctPokemon").empty();
 	$("#pokemon").empty();
 
-	$("#right").html("Correct Answers: " + correctAnswers);
-	$("#wrong").html("Incorrect Answers: " + incorrectAnswers);
-	$("#unanswered").html("Unanswered: " + unanswered);
-	restart.addClass("restart");
+	$("#right").html("<h2> Correct Answers: " + correctAnswers + "</h2>");
+	$("#wrong").html("<h2> Incorrect Answers: " + incorrectAnswers + "</h2>");
+	$("#unanswered").html("<h2> Unanswered: " + unanswered + "</h2>");
 	restart.show();
 	restart.html("<h2 class='btn btn-2 btn-2h'>Play Again?</h2>");
 };

@@ -2,7 +2,7 @@ body{
 	text-align: center;
 	background-image: url("../imgs/pattern.png");
 	font-family: 'Itim', cursive;
-	overflow: auto;
+	overflow-x: hidden;
 }
 
 .logo{
@@ -25,6 +25,12 @@ body{
 	font-size: 3em;
 }
 
+.results{
+	font-size: 3em;
+	color: #fbce01;
+}
+
+/*-----------CODROPS BUTTON--------------*/
 .btn {
 	width: 200px;
 	border: none;
