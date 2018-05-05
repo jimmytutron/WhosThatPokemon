@@ -135,6 +135,8 @@ function intialize(){
 	unanswered = 0;
 	newPokemon();
 };
+
+
 function newPokemon(){
 	answered = true;
 
@@ -210,10 +212,10 @@ function results(){
 	$("#timer").empty();
 	$("#correctPokemon").empty();
 	$("#pokemon").empty();
+	var totalIncorrect = incorrectAnswers + unanswered;
 
 	$("#right").html("<h2> Correct: " + correctAnswers + "</h2>");
-	$("#wrong").html("<h2> Incorrect: " + incorrectAnswers + "</h2>");
-	$("#unanswered").html("<h2> Unanswered: " + unanswered + "</h2>");
+	$("#wrong").html("<h2> Incorrect: " + totalIncorrect + "</h2>");
 
 	if (correctAnswers === 12) {
 		$("#rank").html("<h2>Wow! You're a Pokemon Master!</h2>");
@@ -226,10 +228,10 @@ function results(){
 		$("#rank").append("<img class='pkmnImg img-fluid animated fadeInUp' src='https://media3.giphy.com/media/amrNGnZUeWhZC/giphy.gif'>");	
 	} else if (correctAnswers >= 3) {
 		$("#rank").html("<h2>Looks like you could use more training!</h2>");
-		$("#rank").append("<img class='pkmnImg img-fluid animated fadeInUp' src='https://media0.giphy.com/media/RPTxTwpx4ChiM/giphy.gif'>");	
+		$("#rank").append("<img class='pkmnImg img-fluid animated fadeInUp' src='https://i.pinimg.com/originals/a3/0e/ae/a30eae36b8776099e05a220619bcb7e3.gif'>");	
 	} else if (correctAnswers >= 0) {
 		$("#rank").html("<h2>Oof! Go back to Pokemon School</h2>");
-		$("#rank").append("<img class='pkmnImg img-fluid animated fadeInUp' src='https://media0.giphy.com/media/rAm0u2k17rM3e/giphy.gif'>");	
+		$("#rank").append("<img class='pkmnImg img-fluid animated fadeInDown' src='https://media0.giphy.com/media/rAm0u2k17rM3e/giphy.gif'>");	
 	}
 	restart.show();
 	restart.html("<h2 class='btn btn-2 btn-2h'>Play Again?</h2>");
